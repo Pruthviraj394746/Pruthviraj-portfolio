@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pruthviraj — Web Developer & UI/UX Designer Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+
+  <!-- Sticky Background Canvas for Scroll-Driven Animation -->
+  <div class="canvas-viewport">
+    <canvas id="animation-canvas"></canvas>
+  </div>
+
+  <!-- Main Scrollable Portfolio Content -->
+  <main class="portfolio-container scroll-track">
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+      <div class="logo">PRUTHVIRAJ</div>
+
+      <nav class="nav-pill">
+        <a href="#about" class="nav-link active">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-link">Resume</a>
+      </nav>
+
+      <a href="#contact" class="btn-primary">
+        <span>Start a Project</span>
+        <span class="btn-icon">↗</span>
+      </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <!-- Huge Typography behind persona -->
+      <div class="hero-bg-title">
+        <span class="greeting">Hi, I am</span>
+        <h1 class="hero-name">Pruthviraj</h1>
+      </div>
+
+      <div class="hero-content">
+        <!-- Left Hero Card -->
+        <div class="hero-left-card">
+          <div class="tag-badge">
+            <span class="star">✦</span> Computer Science & Engineering Student
+          </div>
+          <h2 class="hero-headline">Building intelligent software, AI systems & immersive web experiences</h2>
+          <div class="hero-actions">
+            <a href="#contact" class="btn-primary">
+              <span>Get in Touch</span>
+              <span class="btn-icon">↗</span>
+            </a>
+            <a href="#projects" class="btn-primary">
+              <span>View My Work</span>
+              <span class="btn-icon">↘</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Hero Floating Stat Card -->
+        <div class="hero-right-card">
+        </div>
+      </div>
+
+      <!-- Minimal Floating Scroll Indicator -->
+      <div id="scroll-hint" class="scroll-hint">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>SCROLL DOWN TO ANIMATE</span>
+      </div>
+    </section>
+
+    <!-- Marquee Ticker Banner -->
+    <section class="marquee-section">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span>FRONT-END DEVELOPMENT</span> <span class="star">✦</span>
+          <span>FULL-STACK DEVELOPMENT</span> <span class="star">✦</span>
+          <span>COMPUTER VISION</span> <span class="star">✦</span>
+          <span>FRONT-END DEVELOPMENT</span> <span class="star">✦</span>
+          <span>FULL-STACK DEVELOPMENT</span> <span class="star">✦</span>
+          <span>COMPUTER VISION</span> <span class="star">✦</span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+          <span>FRONT-END DEVELOPMENT</span> <span class="star">✦</span>
+          <span>FULL-STACK DEVELOPMENT</span> <span class="star">✦</span>
+          <span>COMPUTER VISION</span> <span class="star">✦</span>
+          <span>FRONT-END DEVELOPMENT</span> <span class="star">✦</span>
+          <span>FULL-STACK DEVELOPMENT</span> <span class="star">✦</span>
+          <span>COMPUTER VISION</span> <span class="star">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section reveal">
+      <div class="about-tag">
+        <span class="star">✦</span> About Me
+      </div>
+      <div class="about-content">
+        <p class="about-statement">
+          Hey, I'm <strong>Pruthviraj</strong> — a Computer Science & Engineering student and developer who enjoys
+          building practical software, AI-powered systems, and immersive web experiences. I work across front-end
+          development, full-stack applications, computer vision, and interactive 3D experiences, turning real-world
+          ideas into functional products.
+        </p>
+        <div class="about-actions">
+          <a href="#projects" class="btn-primary">
+            <span>View My Work</span>
+            <span class="btn-icon">↘</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="skills-section reveal">
+      <div class="skills-header">
+        <div class="tag-badge">
+          <span class="star">✦</span> TECHNICAL SKILLS
+        </div>
+        <h2 class="skills-title">Technologies I use to build intelligent digital experiences.</h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Card 01: Programming -->
+        <div class="skill-card reveal-stagger reveal-delay-1">
+          <div class="skill-card-number">01</div>
+          <div class="skill-card-content">
+            <h3 class="skill-card-title">PROGRAMMING</h3>
+            <div class="skill-badges">
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">Java</span>
+              <span class="skill-badge">C</span>
+              <span class="skill-badge">C++</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 02: Frontend -->
+        <div class="skill-card reveal-stagger reveal-delay-2">
+          <div class="skill-card-number">02</div>
+          <div class="skill-card-content">
+            <h3 class="skill-card-title">FRONTEND</h3>
+            <div class="skill-badges">
+              <span class="skill-badge">HTML</span>
+              <span class="skill-badge">CSS</span>
+              <span class="skill-badge">JavaScript</span>
+              <span class="skill-badge">React.js</span>
+              <span class="skill-badge">Next.js</span>
+              <span class="skill-badge">Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 03: AI / Machine Learning -->
+        <div class="skill-card reveal-stagger reveal-delay-3">
+          <div class="skill-card-number">03</div>
+          <div class="skill-card-content">
+            <h3 class="skill-card-title">AI / MACHINE LEARNING</h3>
+            <div class="skill-badges">
+              <span class="skill-badge">Machine Learning</span>
+              <span class="skill-badge">OpenCV</span>
+              <span class="skill-badge">YOLOv8</span>
+              <span class="skill-badge">DeepSORT</span>
+              <span class="skill-badge">PyTorch</span>
+              <span class="skill-badge">scikit-learn</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 04: Backend -->
+        <div class="skill-card reveal-stagger reveal-delay-4">
+          <div class="skill-card-number">04</div>
+          <div class="skill-card-content">
+            <h3 class="skill-card-title">BACKEND</h3>
+            <div class="skill-badges">
+              <span class="skill-badge">Node.js</span>
+              <span class="skill-badge">Express.js</span>
+              <span class="skill-badge">FastAPI</span>
+              <span class="skill-badge">REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 05: Databases -->
+        <div class="skill-card reveal-stagger reveal-delay-1">
+          <div class="skill-card-number">05</div>
+          <div class="skill-card-content">
+            <h3 class="skill-card-title">DATABASES</h3>
+            <div class="skill-badges">
+              <span class="skill-badge">MySQL</span>
+              <span class="skill-badge">PostgreSQL</span>
+              <span class="skill-badge">SQLite</span>
+              <span class="skill-badge">Redis</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 06: Tools & Technologies -->
+        <div class="skill-card reveal-stagger reveal-delay-2">
+          <div class="skill-card-number">06</div>
+          <div class="skill-card-content">
+            <h3 class="skill-card-title">TOOLS & TECHNOLOGIES</h3>
+            <div class="skill-badges">
+              <span class="skill-badge">Git</span>
+              <span class="skill-badge">GitHub</span>
+              <span class="skill-badge">Docker</span>
+              <span class="skill-badge">VS Code</span>
+              <span class="skill-badge">Three.js</span>
+              <span class="skill-badge">Vite</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technology Strip -->
+      <div class="tech-strip-wrapper reveal">
+        <div class="tech-strip-track">
+          <div class="tech-strip-content">
+            <span>Python</span> <span class="dot">·</span>
+            <span>Java</span> <span class="dot">·</span>
+            <span>C</span> <span class="dot">·</span>
+            <span>C++</span> <span class="dot">·</span>
+            <span>React.js</span> <span class="dot">·</span>
+            <span>Next.js</span> <span class="dot">·</span>
+            <span>Node.js</span> <span class="dot">·</span>
+            <span>FastAPI</span> <span class="dot">·</span>
+            <span>OpenCV</span> <span class="dot">·</span>
+            <span>YOLOv8</span> <span class="dot">·</span>
+            <span>Three.js</span> <span class="dot">·</span>
+            <span>MySQL</span> <span class="dot">·</span>
+            <span>PostgreSQL</span> <span class="dot">·</span>
+            <span>Docker</span> <span class="dot">·</span>
+            <span>Git</span> <span class="dot">·</span>
+          </div>
+          <div class="tech-strip-content" aria-hidden="true">
+            <span>Python</span> <span class="dot">·</span>
+            <span>Java</span> <span class="dot">·</span>
+            <span>C</span> <span class="dot">·</span>
+            <span>C++</span> <span class="dot">·</span>
+            <span>React.js</span> <span class="dot">·</span>
+            <span>Next.js</span> <span class="dot">·</span>
+            <span>Node.js</span> <span class="dot">·</span>
+            <span>FastAPI</span> <span class="dot">·</span>
+            <span>OpenCV</span> <span class="dot">·</span>
+            <span>YOLOv8</span> <span class="dot">·</span>
+            <span>Three.js</span> <span class="dot">·</span>
+            <span>MySQL</span> <span class="dot">·</span>
+            <span>PostgreSQL</span> <span class="dot">·</span>
+            <span>Docker</span> <span class="dot">·</span>
+            <span>Git</span> <span class="dot">·</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section reveal">
+      <div class="section-header">
+        <div class="tag-badge">
+          <span class="star">✦</span> Some Recent Projects
+        </div>
+        <h2 class="section-title">Selected Work That Delivers Results</h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project Card 1 -->
+        <div class="project-card reveal-stagger reveal-delay-1">
+          <div class="project-image-container bg-beige">
+            <div class="card-hero-overlay">AI QUEUE</div>
+            <img src="/images/project1.png" alt="AI Queue Intelligence & Safety Monitoring System" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">AI Queue Intelligence & Safety Monitoring System</h3>
+            <p class="project-description">Real-time computer vision system for crowd and queue monitoring using YOLOv8,
+              DeepSORT and OpenCV, with people tracking, crowd analysis, risk detection and alerts.</p>
+            <span class="project-tag">AI / COMPUTER VISION</span>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card stagger reveal-stagger reveal-delay-2">
+          <div class="project-image-container bg-blue">
+            <div class="card-hero-overlay">MEETFLOW</div>
+            <img src="/images/project2.png" alt="MeetFlow-AI — AI Meeting Monitor & Action Item Tracker" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">MeetFlow-AI — AI Meeting Monitor & Action Item Tracker</h3>
+            <p class="project-description">AI-powered meeting assistant with real-time video conferencing, live
+              transcription, meeting summaries and automatic action-item extraction.</p>
+            <span class="project-tag">AI / FULL STACK</span>
+            <div class="project-actions">
+              <a href="https://meetflowai.netlify.app/dashboard" target="_blank" rel="noopener noreferrer"
+                class="project-link">
+                Live Demo ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="project-card reveal-stagger reveal-delay-3">
+          <div class="project-image-container bg-vibrant">
+            <div class="card-hero-overlay">VR ESCAPE</div>
+            <img src="/images/project3.png" alt="VR Horror Escape Room" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">VR Horror Escape Room</h3>
+            <p class="project-description">Immersive browser-based 3D horror escape-room experience featuring
+              interactive puzzles, multiple levels, dynamic audio, hints and progressive gameplay.</p>
+            <span class="project-tag">3D / INTERACTIVE WEB</span>
+            <div class="project-actions">
+              <a href="https://vr-escape-room.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="project-link">
+                Live Demo ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 4 -->
+        <div class="project-card stagger reveal-stagger reveal-delay-4">
+          <div class="project-image-container bg-dark-blue">
+            <div class="card-hero-overlay">PASSWORD</div>
+            <img src="/images/project4.png" alt="Password Manager" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Password Manager</h3>
+            <p class="project-description">Secure password management application designed to store, organize and manage
+              user credentials with a focus on privacy, security and convenient access.</p>
+            <span class="project-tag">SECURITY / FULL STACK</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section reveal">
+
+      <div class="services-header">
+        <div class="tag-badge">
+          <span class="star">✦</span> Services
+        </div>
+
+        <h2 class="services-title">
+          Building digital solutions<br />
+          that solve real problems.
+        </h2>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Service 01 -->
+        <div class="service-card reveal-stagger reveal-delay-1">
+          <div class="service-number">01</div>
+
+          <div class="service-content">
+            <h3>Web Application Development</h3>
+            <p>
+              Responsive and scalable web applications built with modern
+              frontend and backend technologies.
+            </p>
+          </div>
+
+          <div class="service-tech">
+            <span>React</span>
+            <span>Next.js</span>
+            <span>Node.js</span>
+          </div>
+        </div>
+
+
+        <!-- Service 02 -->
+        <div class="service-card reveal-stagger reveal-delay-2">
+          <div class="service-number">02</div>
+
+          <div class="service-content">
+            <h3>AI & Intelligent Systems</h3>
+            <p>
+              AI-powered applications designed for automation, prediction,
+              analysis, and intelligent decision-making.
+            </p>
+          </div>
+
+          <div class="service-tech">
+            <span>Python</span>
+            <span>Machine Learning</span>
+            <span>AI</span>
+          </div>
+        </div>
+
+
+        <!-- Service 03 -->
+        <div class="service-card reveal-stagger reveal-delay-3">
+          <div class="service-number">03</div>
+
+          <div class="service-content">
+            <h3>Computer Vision Solutions</h3>
+            <p>
+              Real-time vision systems for object detection, tracking,
+              monitoring, and video analytics.
+            </p>
+          </div>
+
+          <div class="service-tech">
+            <span>YOLOv8</span>
+            <span>OpenCV</span>
+            <span>DeepSORT</span>
+          </div>
+        </div>
+
+
+        <!-- Service 04 -->
+        <div class="service-card reveal-stagger reveal-delay-4">
+          <div class="service-number">04</div>
+
+          <div class="service-content">
+            <h3>API & Backend Engineering</h3>
+            <p>
+              Robust backend services, REST APIs, database integration,
+              and reliable application infrastructure.
+            </p>
+          </div>
+
+          <div class="service-tech">
+            <span>FastAPI</span>
+            <span>Express</span>
+            <span>SQL</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- Footer / Contact Section -->
+    <footer id="contact" class="footer-section">
+
+      <div class="footer-cta-card reveal-slow">
+        <div class="tag-badge">
+          <span class="star">✦</span> Let's Work Together
+        </div>
+        <h2 class="footer-title">Ready to scale your business with a high-converting website?</h2>
+        <div class="footer-cta-actions">
+          <a href="mailto:pruthvirajkrubudoddi@gmail.com" class="btn-primary btn-large">
+            <span>pruthvirajkrubudoddi@gmail.com</span>
+            <span class="btn-icon">↗</span>
+          </a>
+          <span class="availability-pill">
+            <span class="status-dot"></span> Available for new projects
+          </span>
+        </div>
+      </div>
+
+      <!-- Main Multi-Column Footer Content -->
+      <div class="footer-main-grid">
+
+        <!-- Brand & Bio -->
+        <div class="footer-col brand-col">
+          <div class="footer-logo">
+            <span class="footer-star">✦</span>
+            PRUTHVIRAJ
+          </div>
+
+          <p class="footer-bio">
+            Computer Science & Engineering student and Full-Stack Developer
+            building practical software, intelligent systems, and interactive
+            experiences.
+          </p>
+
+          <div class="footer-status">
+            <span class="location-tag">📍</span>
+            <span>Bengaluru, India</span>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">NAVIGATION</h4>
+
+          <ul class="footer-list">
+            <li><a href="#about"><span>•</span> About Me</a></li>
+            <li><a href="#projects"><span>•</span> Selected Work</a></li>
+            <li><a href="#services"><span>•</span> Services & Expertise</a></li>
+            <li><a href="#contact"><span>•</span> Get in Touch</a></li>
+          </ul>
+        </div>
+
+        <!-- Connect -->
+        <div class="footer-col">
+          <h4 class="footer-heading">CONNECT</h4>
+
+          <ul class="footer-list">
+            <li>
+              <a href="https://github.com/Pruthviraj394746" target="_blank" rel="noopener noreferrer">
+                <span>◉</span> GitHub <strong>↗</strong>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/in/pruthvirajkrubudoddi/" target="_blank" rel="noopener noreferrer">
+                <span>in</span> LinkedIn <strong>↗</strong>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:pruthvirajkrubudoddi@gmail.com">
+                <span>✉</span> Email Me <strong>↗</strong>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          © 2026 Pruthviraj. All rights reserved.
+        </div>
+
+        <div class="footer-credit">
+          Designed & Built by Pruthviraj
+        </div>
+
+        <button id="back-to-top" class="back-to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+          <span>Back to top</span>
+          <span class="back-to-top-arrow">↑</span>
+        </button>
+      </div>
+
+    </footer>
+
+  </main>
+
+
+
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
