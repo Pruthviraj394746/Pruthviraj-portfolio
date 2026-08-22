@@ -963,12 +963,12 @@ body {
      ========================= */
 
   .hero-section {
-    min-height: 100svh;
-    padding: 110px 18px 50px;
+    min-height: 100vh;
+    padding: 85px 18px 40px;
   }
 
   .hero-bg-title {
-    top: 13%;
+    top: 80px;
     width: 100%;
     padding: 0 8px;
   }
@@ -981,9 +981,9 @@ body {
 
   /* Smaller so the complete "Pruthviraj" fits on mobile */
   .hero-name {
-    font-size: clamp(2.5rem, 14vw, 4.5rem);
+    font-size: clamp(2.2rem, 11vw, 4.5rem);
     line-height: 0.9;
-    letter-spacing: -2px;
+    letter-spacing: -1.5px;
     white-space: nowrap;
   }
 
@@ -991,12 +991,10 @@ body {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
-    margin-top: auto;
+    margin-top: clamp(240px, 44vh, 380px);
     padding-bottom: 5px;
     gap: 20px;
-
-    /* Move the card downward without affecting desktop */
-    transform: translateY(65px);
+    transform: none;
   }
 
   .hero-left-card {
@@ -2841,7 +2839,7 @@ body {
   /* Hero section adjustments */
   .hero-content {
     transform: none !important;
-    margin-top: 30px;
+    margin-top: clamp(240px, 44vh, 380px) !important;
   }
 
   .hero-headline {
