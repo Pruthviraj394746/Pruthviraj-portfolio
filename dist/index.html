@@ -12,9 +12,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap"
     rel="stylesheet">
-
-  <script type="module" crossorigin src="/assets/index-C_Map3Ov.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-DsaYEbrk.css">
+
+  <script type="module" crossorigin src="/assets/index-9IuAXwOB.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-OucGJgYq.css">
 </head>
 
 <body>
@@ -125,6 +125,17 @@
             <span>View My Work</span>
             <span class="btn-icon">↘</span>
           </a>
+        </div>
+
+        <!-- Currently Building Status Indicator -->
+        <div class="currently-building">
+          <div class="currently-building__header">
+            <span class="currently-building__dot" aria-hidden="true"></span>
+            <span class="currently-building__label">CURRENTLY BUILDING</span>
+          </div>
+          <div class="currently-building__title">
+            <strong>DomainRAG</strong> — Domain-Specific Retrieval-Augmented Question Answering
+          </div>
         </div>
       </div>
     </section>
@@ -284,14 +295,18 @@
         <!-- Project Card 1 -->
         <div class="project-card reveal-stagger reveal-delay-1">
           <div class="project-image-container bg-beige">
-            <div class="card-hero-overlay">AI QUEUE</div>
-            <img src="/images/project1.png" alt="AI Queue Intelligence & Safety Monitoring System" />
+            <div class="card-hero-overlay">ATMOS</div>
+            <img src="/images/project1.png" alt="Atmos — Interactive Weather Application" />
           </div>
           <div class="project-info">
-            <h3 class="project-title">AI Queue Intelligence & Safety Monitoring System</h3>
-            <p class="project-description">Real-time computer vision system for crowd and queue monitoring using YOLOv8,
-              DeepSORT and OpenCV, with people tracking, crowd analysis, risk detection and alerts.</p>
-            <span class="project-tag">AI / COMPUTER VISION</span>
+            <h3 class="project-title">Atmos</h3>
+            <p class="project-description">An interactive weather application that provides real-time weather information through a clean, responsive interface.</p>
+            <span class="project-tag">REACT / WEATHER API</span>
+            <div class="project-actions">
+              <a href="https://atmos-peach-rho.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                Live Demo ↗
+              </a>
+            </div>
           </div>
         </div>
 
@@ -307,7 +322,7 @@
               transcription, meeting summaries and automatic action-item extraction.</p>
             <span class="project-tag">AI / FULL STACK</span>
             <div class="project-actions">
-              <a href="https://meetflowai.netlify.app/dashboard" target="_blank" rel="noopener noreferrer"
+              <a href="https://meetflowai.netlify.app/" target="_blank" rel="noopener noreferrer"
                 class="project-link">
                 Live Demo ↗
               </a>
@@ -468,6 +483,27 @@
         </div>
       </div>
 
+      <!-- Interactive Feedback Section -->
+      <div id="fb-egg-wrapper" class="fb-egg-wrapper reveal-slow">
+        <div class="fb-egg-card">
+          <div id="fb-egg-content" class="fb-egg-content">
+            <h3 id="fb-egg-question" class="fb-egg-question">Do you like my portfolio?</h3>
+            <div id="fb-egg-actions" class="fb-egg-actions">
+              <button type="button" id="fb-egg-btn-yes" class="fb-egg-btn fb-egg-btn-yes" aria-label="Yes, I like the portfolio">
+                <span>Yes 😎</span>
+              </button>
+              <button type="button" id="fb-egg-btn-no" class="fb-egg-btn fb-egg-btn-no" aria-label="No, I do not like the portfolio">
+                <span>No 😐</span>
+              </button>
+            </div>
+          </div>
+          <div id="fb-egg-success" class="fb-egg-success" aria-live="polite" hidden>
+            <span class="fb-egg-success-emoji">😎</span>
+            <h3 class="fb-egg-success-text">Thanks! I knew you'd like it. 😎</h3>
+          </div>
+        </div>
+      </div>
+
       <!-- Main Multi-Column Footer Content -->
       <div class="footer-main-grid">
 
@@ -551,7 +587,7 @@
 
 
 
-
+
 </body>
 
 </html>

@@ -340,3 +340,58 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
+/* =========================================================
+   INTERACTIVE FEEDBACK EASTER EGG LOGIC
+   ========================================================= */
+
+(() => {
+  const initFeedback = () => {
+    const questionEl = document.getElementById("fb-egg-question");
+    const btnYes = document.getElementById("fb-egg-btn-yes");
+    const btnNo = document.getElementById("fb-egg-btn-no");
+    const contentEl = document.getElementById("fb-egg-content");
+    const successEl = document.getElementById("fb-egg-success");
+
+    if (!questionEl || !btnYes || !btnNo || !contentEl || !successEl) return;
+
+    let noClickCount = 0;
+
+    const noResponses = [
+      { text: "Are you sure? 😠", yesScale: 1.15, noScale: 0.85 },
+      { text: "Really? 😡", yesScale: 1.30, noScale: 0.72 },
+      { text: "Come on... 😤", yesScale: 1.45, noScale: 0.60 },
+      { text: "You keep clicking NO?! 🤬", yesScale: 1.60, noScale: 0.50 },
+      { text: "Okay, I get it... 😤", yesScale: 1.75, noScale: 0.42 }
+    ];
+
+    btnNo.addEventListener("click", () => {
+      noClickCount++;
+
+      if (noClickCount <= noResponses.length) {
+        const response = noResponses[noClickCount - 1];
+        questionEl.textContent = response.text;
+        btnYes.style.transform = `scale(${response.yesScale})`;
+        btnNo.style.transform = `scale(${response.noScale})`;
+      } else {
+        // Final stage after "Okay, I get it... 😤"
+        questionEl.textContent = "Hmph... what will you do now? 😏";
+        btnNo.style.display = "none";
+        btnNo.remove();
+        btnYes.style.transform = "scale(1.5)";
+      }
+    });
+
+    btnYes.addEventListener("click", () => {
+      contentEl.style.display = "none";
+      successEl.removeAttribute("hidden");
+    });
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initFeedback);
+  } else {
+    initFeedback();
+  }
+})();
+
